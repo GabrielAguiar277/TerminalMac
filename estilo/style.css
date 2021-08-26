@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.terminal-area{
+    height: 60%;
+    width: 60%;
+
+    border-radius: 10px;
+    border: solid 0.5px white;
+
+    background-color: #1e1e1e;
+    overflow: hidden;
+    
+}
+
+.aba{
+    height: 30px;
+    background-color: #4c4c4c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+.aba .inv{
+    width: 96px;
+}
+
+.menu-aba{
+    display: flex;
+}
+
+.menu-ball{
+    height: 12px;
+    width: 12px;
+    border-radius: 10px;
+
+    margin-left: 20px;
+    background-color: white;
+}
+
+/* .menu-ball:not(:last-child){
+    margin-right: 20px;
+} */
+
+.red-ball{
+    background-color: #ff5b52;
+}
+.yellow-ball{
+    background-color: #e6c027;
+}
+.green-ball{
+    background-color: #51c22b;
+}
+
+.terminal{
+    padding: 0 20px;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+.user-terminal{
+    display: flex;
+}
+
+.last-command ul{
+    list-style: none;
+    padding-left: 10px;
+}
+
+form{
+    display: flex;
+    width: 70%;
+}
+
+form .user-command{
+    width: 100%;
+    background: none;
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+form .user-command:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    
+}
