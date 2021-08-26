@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+
 main{
     height: 100vh;
     width: 100%;
@@ -74,6 +78,8 @@ main{
     padding: 0 20px;
     font-family: 'Roboto Mono', monospace;
     color: white;
+    overflow: scroll;
+    height: 100%;
 }
 
 .user-terminal{
@@ -90,8 +96,8 @@ form{
     width: 70%;
 }
 
-form .user-command{
-    width: 100%;
+.user-command{
+    width: 50%;
     background: none;
     border: none;
     font-family: 'Roboto Mono', monospace;
@@ -100,7 +106,7 @@ form .user-command{
     font-size: 16px;
 }
 
-form .user-command:focus{
+.user-command:focus{
     box-shadow: 0 0 0 0;
     outline: 0;
     
